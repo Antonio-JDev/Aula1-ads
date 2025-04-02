@@ -1,61 +1,104 @@
 * {
     background: #b3f9b8;
-    font-family:'monospace' 50px;
 }
-
 :root {
     --primary-color: #b3f9b8;
     --secondary-color: #ffffff;
     --terceira-color: #2e2b2b;
 
 }
-
-
-h1 {
-    font-size: 80px;
-    justify-content: center;
-    height: auto;
-    margin-left: 42%;
+body{
+    font-family:'monospace';
+    background: var(--primary-color);
+    color: var(--terceira-color);
+    margin: 0;
+    padding: 0;
 }
 
-p {
+h1 {
+    background: var(--primary-color);
+    font-size: 50px;
+    justify-content: center;
+    height: auto;
+    margin-left: 45%;
+
+}
+
+article {
+    background: var(--primary-color);
+    padding: 20px;
+    margin: 30px;
     font-size: 20px;
-    margin-left: 0%;
-    width: none;
+    border: #ffffff 5px solid;
 }
 
 .image-coala{
-    background-position: center;
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    align-content: center;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 600px;
+    height: 400px;
+    border-radius: 10%;
+    border: #ffffff 5px solid;
 }
 
 h6 {
-    background: var(--terceira-color);
+    background: var(--primary-color);
     font-size: 20px;
-    margin-left: 41%;
-    min-height: 20px;
-    padding-bottom: none;
-    margin-bottom: none;
+    justify-content: center;
+    margin-left: 45%;
+
 }
 
-.ref-referencias {
-    background: var(--terceira-color);
-    color: rgb(32, 0, 192);
-    font-size: 20px;
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.info-informacao {
+
+.barra2 {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.barra2 li {
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.barra2 li:hover {
+    background-color: #6d6262;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+footer {
+    background:var(--terceira-color);
+    height: 50px;
+}
+
+.info-informacao, a{
     background:var(--terceira-color);
     color: #ffffff;
     font-size: 20px;
-    margin-left: 35%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.footer {
-    background:var(--terceira-color);
-    color: #ffffff;
-    font-size: 20px;
 }
